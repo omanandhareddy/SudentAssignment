@@ -1,0 +1,24 @@
+<h1 class="HEAD">ASSINGMENT</h1>
+<div>
+  <div class="inner">
+    <p>Name :</p>
+    <input [(ngModel)]="name" type="text">
+  </div>
+  <div class="inner">
+    <p>Subject :</p>
+    <input [(ngModel)]="subject" type="text">
+  </div>
+  <div class="inner">
+    <p>Test Score 1 :</p>
+    <input [(ngModel)]="score1" type="text">
+  </div>
+  <div class="inner">
+    <p>Test Score 2 :</p>
+    <input [(ngModel)]="score2" type="text">
+  </div>
+</div>
+<div class="di">
+  <button class="btn" (click)="submitBtn()">Submit</button>
+</div>
+
+<p *ngIf="showMessage" class="para">`Hello {{name}}! Your Score in {{subject}} is {{total}}`</p>
