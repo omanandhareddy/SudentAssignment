@@ -1,0 +1,43 @@
+<!-- <h1 class="HEAD">ASSINGMENT</h1>
+<div>
+  <div class="inner">
+    <p>Name :</p>
+    <input [(ngModel)]="name" type="text">
+  </div>
+  <div class="inner">
+    <p>Subject :</p>
+    <input [(ngModel)]="subject" type="text">
+  </div>
+  <div class="inner">
+    <p>Test Score 1 :</p>
+    <input [(ngModel)]="score1" type="text">
+  </div>
+  <div class="inner">
+    <p>Test Score 2 :</p>
+    <input [(ngModel)]="score2" type="text">
+  </div>
+</div>
+<div class="di">
+  <button class="btn" (click)="submitBtn()">Submit</button>
+</div>
+
+<p *ngIf="showMessage" class="para">`Hello {{name}}! Your Score in {{subject}} is {{total}}`</p> -->
+<div class="dashboard">
+  <h1> Student Dashboard</h1>
+
+  <div class="form">
+    <input [(ngModel)]="studentName"  type="text" placeholder="Enter name" />
+    <input [(ngModel)]="studentGrade"  type="text" placeholder="Enter grade (A/B/C)" />
+    <button (click)="addStudent()">Add Student</button>
+  </div>
+
+  <div *ngIf="students.length === 0" class="no-students">
+    No students were found.
+  </div>
+
+  <ul>
+    <li *ngFor="let student of students" [ngClass]="getColorClass(student.grade)">
+       {{ student.name }} - Grade: {{ student.grade }} {{ getGradeLabel(student.grade) }}
+    </li>
+  </ul>
+</div>
