@@ -9,16 +9,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './user.component.css'
 })
 export class UserComponent {
-  // // name=""
-  // // subject=""
-  // // score1: number = 0;
-  // // score2: number = 0;
-  // // total: number = 0;
-  // // showMessage: boolean = false;
-  // // submitBtn(){
-  // //   this.total = Number(this.score1) + Number(this.score2);
-  // //   this.showMessage = true;
-  // }
+  
 
   students: { name: string; grade: string }[] = [];
   studentName: string = '';

@@ -1,26 +1,4 @@
-/* .HEAD{
-  color: black;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  
-}
-.inner{
-  display: flex;
-  justify-content: space-evenly;
-}
-.btn{
-  margin: auto;
-}
-.para{
-  color: red;
-  text-align: center;
-}
-.di{
-   display: flex;
-  justify-content: center;
-  margin-top: 20px;
-} */
+
  .dashboard {
   text-align: center;
   padding: 30px;
